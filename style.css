@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #00509e;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .status, .count, .timestamp {
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  .status {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .count {
+    font-size: 1.5em;
+    color: #00509e;
+  }
+  
+  .timestamp {
+    color: #666;
+  }
+  
+  h2 {
+    color: #333;
+    border-bottom: 2px solid #00509e;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    font-size: 1.4em;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  #powerInput {
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #00509e;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #003f7e;
+  }
+  
+  #consumption {
+    font-weight: bold;
+    color: #00509e;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #history {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  #history li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .chart {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  

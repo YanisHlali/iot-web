@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suivi de la LED</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        font-size: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Suivi de la LED</h1>
+    <div class="status">Statut : <span id="ledStatus">Chargement...</span></div>
+    <div class="count">
+      Allumages aujourd'hui : <span id="dailyCount">0</span>
+    </div>
+    <div class="timestamp">
+      Dernier changement : <span id="lastTimestamp">...</span>
+    </div>
+    <div class="totalOnTime">
+      Durée totale d'allumage aujourd'hui :
+      <span id="totalOnTime">0h 0m 0s</span>
+    </div>
+
+    <button onclick="toggleLed()" class="button">
+      Allumer/Éteindre la LED
+    </button>
+    <button onclick="exportData()" class="button">Exporter les données</button>
+
+    <h2>Historique des allumages (aujourd'hui)</h2>
+    <ul id="history"></ul>
+
+    <script src="app.js"></script>
+  </body>
+</html>
