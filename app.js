@@ -6,7 +6,7 @@ let realTimeTimer;
 
 async function fetchLEDData() {
   try {
-    const response = await fetch("http://172.18.0.1:1880/ledStatus");
+    const response = await fetch("https://172.18.0.1:1880/ledStatus");
     const data = await response.json();
 
     document.getElementById("ledStatus").innerText = data.status;
@@ -39,7 +39,7 @@ async function fetchLEDData() {
 
 function toggleLed() {
   const newState = ledIsOn ? "off" : "on";
-  fetch(`http://172.18.0.1:1880/toggleLed?state=${newState}`)
+  fetch(`https://172.18.0.1:1880/toggleLed?state=${newState}`)
     .then((response) => response.text())
     .then((data) => {
       console.log("Commande envoyée :", data);
